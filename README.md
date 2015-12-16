@@ -1,5 +1,5 @@
 # Galactical Associations Koans
-Confused about db relationships and writing migrations in Rails? These koans are intended as a learning tool just for you.
+Confused about database relations with DataMapper? These koans are intended as a learning tool just for you.
 
 ### Instructions
 1. Clone the repository.

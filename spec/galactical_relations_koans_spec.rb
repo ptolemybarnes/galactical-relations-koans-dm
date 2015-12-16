@@ -1,5 +1,3 @@
-require 'rails_helper' 
-
 describe 'Galactical Relations Koans' do
 
   let(:sun)      { Sun.create    }

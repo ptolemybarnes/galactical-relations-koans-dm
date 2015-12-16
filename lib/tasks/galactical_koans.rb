@@ -1,9 +1,8 @@
 require_relative './rake_helpers.rb'
 include RakeHelpers
-remove_default_spec_task
 
 require 'yaml'
-DESCRIPTIONS = YAML.load_file(File.join(Rails.root, 'lib/tasks/stage_descriptions.yml'))
+DESCRIPTIONS = YAML.load_file('lib/tasks/stage_descriptions.yml')
 
 task galaxy: 'galaxy:all'
 
@@ -32,6 +31,12 @@ namespace :galaxy do
     end
 
   end
-  
 end
 
+namespace :db do
+
+  task :create do
+    `psql --command 'create database galactical_koans;'`
+  end
+
+end
