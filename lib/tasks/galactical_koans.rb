@@ -39,4 +39,10 @@ namespace :db do
     `psql --command 'create database galactical_koans;'`
   end
 
+  task :drop do
+    `psql --command 'drop database galactical_koans;'`
+  end
+
+  task reset: [:drop, :create]
 end
+
