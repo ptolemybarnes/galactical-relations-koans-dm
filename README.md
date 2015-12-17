@@ -6,6 +6,8 @@ Confused about database relations with DataMapper? These koans are intended as a
 2. Create the database: `rake db:create`
 3. Run `rake galaxy` to work progressively through the problems. Alternatively, run a single stage with `rake galaxy:stage`, e.g `rake galaxy:beta`.
 
+If you get into a mess with the database, run `rake db:reset`.
+
 ### Stages
 In the domain we have: planets, moons, a sun, and asteroids.
 
